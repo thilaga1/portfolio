@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web Developer Portfolio">
+  <title>Your Name | Web Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+        <p>Thilagavathi folio</p>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+    
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <div class="hero-content">
+      <img src="img.jpg" alt="Your Photo" class="hero-img">
+      <h1>Hi, I'm T.THILAGAVATHI</h1>
+      <p>Fresher</p>
+      <a href="#projects" class="cta-button">View My Work</a>
+    </div>
+  </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <img src="photo.jpg" height="400px" width="300px" >
+        <p><b>NAME</b>:Thilagavathi T</p><br>
+        <P><b>PROFILE</b>:Developer</P><br>
+        <P><b>EMAIL</b>: thilagathiru2003@gmail.com</P><br>
+        <p><b>Phone</b>:(+91)9629557678</p><br>
+        <div class="skills-container">
+          <div class="skill">
+            <h3>HTML</h3>
+            <div class="skill-bar html"></div>
+          </div>
+          <div class="skill">
+            <h3>CSS</h3>
+            <div class="skill-bar css"></div>
+          </div>
+          <div class="skill">
+            <h3>PYTHON </h3>
+            <div class="skill-bar python"></div>
+          </div>
+          <div class="skill">
+            <h3>C</h3>
+            <div class="skill-bar BI"></div>
+          </div>
+        </div>
+      </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About</h2>
+<p> My dedication to the industry stems from a deep passion for developmental zone, driving my commitment to my goals. I have completed various certification, including a workshop on cloud computing,AI ,a paper presentation in MAILAM ENGINEERING COLLEGE, and several IBM certificates.that include courses on Business Intelligence</p></section>
+
+
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-container">
+      <div class="project-card">
+        <img src="e-commerce11.jpg" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>E-commerce website</p>
+      </div>
+      <div class="project-card">
+        <img src="travel3.jpg" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Travel agency website.</p>
+      </div>
+     
+</section>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="certificates">
+    <h2> Certificates</h2>
+    <div class="certificate-container">
+      <div class="certificate-card">
+        <img src="cer1.jpg" alt="Certificate 1">
+        <p><b>Business intelligence using cognos - adroid prolearn</b></p>
+      </div>
+      <div class="certificate-card">
+        <img src="cer2.jpg" alt="Certificate 2">
+        <p><b>Business Intelligence- IBM</b></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <button type="submit" class="register-button">Register</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 thilagavathi. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // GSAP Animations
+    gsap.from(".home h1", { opacity: 0, y: -50, duration: 1 });
+    gsap.from(".home p", { opacity: 0, y: -50, duration: 1, delay: 0.5 });
+    gsap.from(".cta-button", { opacity: 0, y: -50, duration: 1, delay: 1 });
+    gsap.from(".skill-bar", { width: 0, duration: 2, delay: 1 });
+    gsap.from(".project-card", { opacity: 0, y: 50, stagger: 0.2, duration: 1, delay: 1 });
+    gsap.from(".certificate-card", { opacity: 0, y: 50, stagger: 0.2, duration: 1, delay: 1.5 });
+  </script>
+</body>
+</html>

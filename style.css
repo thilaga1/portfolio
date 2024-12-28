@@ -1,0 +1,383 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color:white;
+    color: #f0f0f0;
+    line-height: 1.6;
+  }
+  
+  /* Header and Navigation */
+  header {
+    background-color:#121212;
+    padding: 10px;
+  }
+nav p{
+    font-size:xx-large;
+    padding-top: 5px;
+    color: aquamarine;
+}
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #00f1ff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    transition: color 0.4s ease;
+  }
+  
+  nav ul li a:hover {
+    color:aquamarine
+  }
+  
+  /* Home Section */
+  .home {
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-content h1 {
+    color:#61dafb;
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    color: #61dafb;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    transition: color 0.5s;
+  }
+  
+  .hero-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background-color: #00f1ff;
+    padding: 10px 20px;
+    color:#121212;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color:aquamarine;
+    color:blue;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color:white;
+  }
+  .about p{
+    text-align: left;
+    font-size: larger;
+    color:#121212;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00f1ff;
+  }
+  
+  /* Skills Section */
+  .skills {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: white;
+  }
+  .skills img{
+    border-radius: 30px;
+    border-color: black;
+    
+  }
+  
+  .skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #00f1ff;
+  }
+  
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .skill {
+    background-color:#1c1c1c;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .skills p{
+    text-align: left;
+    font-size: larger;
+    color:white;
+  }
+  
+  .skill h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #00f1ff;
+  }
+  
+  .skill-bar {
+    height: 10px;
+    background-color:antiquewhite;
+    border-radius: 5px;
+    transition: width 2s ease-out;
+  }
+  
+  .html {
+    background-color:aquamarine;
+    width: 80%;
+  }
+  
+  .css {
+    background-color:aquamarine;
+    width: 60%;
+  }
+  
+  .python{
+    background-color:aquamarine;
+    width: 65%;
+  }
+  
+  .BI{
+    background-color:aquamarine;
+    width: 75%;
+  }
+  
+ 
+  /* Projects Section */
+  .projects {
+    padding: 60px 20px;
+    text-align: center;
+    background-color:white;
+  }
+  
+  .projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #00f1ff;
+  }
+  
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    
+  }
+  
+  .project-card {
+    background-color:#1c1c1c;
+    padding: 20px;
+    border-radius: 20px;
+    
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card img {
+    width: 70%;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+  }
+  
+  .project-card h3 {
+    color:aquamarine;
+    font-size: 1.5rem;
+    margin-top: 15px;
+  }
+  
+  .project-card p {
+    color:white;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .project-card:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Certificates Section */
+  .certificates {
+    padding: 60px 20px;
+    text-align: center;
+    background-color:white;
+  }
+  
+  .certificates h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #00f1ff;
+  }
+  
+  .certificate-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .certificate-card {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .certificate-card img {
+    width: 70%;
+    border-radius: 20px;
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 60px 20px;
+    text-align: center;
+    background-color:white;
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00f1ff;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #121212;
+  }
+  
+  .contact label {
+    margin-top: 10px;
+  }
+  
+  .contact input {
+    padding: 10px;
+    margin-top: 5px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .register-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00f1ff;
+    color: #121212;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-button:hover {
+    background-color: #ffffff;
+    color: #00f1ff;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #121212;
+    color: #f0f0f0;
+    margin-top: 40px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-content p {
+      font-size: 1.2rem;
+    }
+  
+    .cta-button {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  
+    .projects h2 {
+      font-size: 2rem;
+    }
+  
+    .project-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .skills h2 {
+      font-size: 2rem;
+    }
+  
+    .skills-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+    }
+  
+    .projects h2 {
+      font-size: 1.8rem;
+    }
+  
+    .project-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .skills h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
